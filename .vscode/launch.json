@@ -1,0 +1,53 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Academia",
+            "request": "launch",
+            "mainClass": "academiapro.Academia",
+            "projectName": "Projeto_Academia-_bd9bff98"
+        },
+        {
+            "name": "Attach by com.sun.jdi.SharedMemoryListen",
+            "type": "jdk",
+            "request": "attach",
+            "listen": "true"
+        },
+        {
+            "name": "Attach to Port",
+            "type": "jdk",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": "8000"
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Projeto_Academia-_bd9bff98"
+        }
+    ]
+}
