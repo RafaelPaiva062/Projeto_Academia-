@@ -5,9 +5,9 @@ public class Cliente extends Usuario  {
     private String sexo;
     private double altura;
     private float peso;
-Cliente(String senhaC, int numeroDeRegitro, String nome,String sexo, double altura, float peso)
+Cliente(String senhaC, int numeroDeRegitro, String nome, String dataNascimento, String endereco ,String sexo, double altura, float peso)
 {  
-    super(numeroDeRegitro, nome);
+    super(numeroDeRegitro, nome, dataNascimento , endereco );
     this.senhaC = senhaC;
     this.sexo = sexo;
     this.altura = altura;
@@ -30,8 +30,6 @@ public float getPeso() {
 }
 public void setPeso(float peso) {
     this.peso = peso;
-}
-public void add(Cliente arrayCliente) {
 }
 public String getSenhaC() {
     return senhaC;
