@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "ModulloConexao",
+            "request": "launch",
+            "mainClass": "acadinioBox.modolodeCanecção.ModulloConexao",
+            "projectName": "Projeto_Academia-_ee82b405"
+        },
+        {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",

@@ -1,6 +1,9 @@
 package acadinioBox.academia;
 
 import java.util.Scanner;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -79,6 +82,26 @@ class Funcionario extends Usuario {
                 System.out.println("Senha inválida! A senha deve conter exatamente 6 caracteres.");
                 return null; // Interrompe a criação
             }
+                     try (Connection conn = DatabaseConnection.getConnection()) {
+                String sql = "INSERT INTO funcionarios (nome, data_nascimento, cargo, telefone, endereco, senha) VALUES (?, ?, ?, ?, ?, ?)";
+                try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+                    stmt.setString(1, nome);
+                    stmt.setString(2, dataNascimento);
+                    stmt.setString(3, cargo);
+                    stmt.setString(4, telefone);
+                    stmt.setString(5, endereco);
+                    stmt.setString(6, senha);
+
+                    int rowsInserted = stmt.executeUpdate();
+                    if (rowsInserted > 0) {
+                        System.out.println("Funcionário cadastrado com sucesso!");
+                    } else {
+                        System.out.println("Falha ao cadastrar funcionário.");
+                    }
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+             
 
             // Criação do objeto Funcionario
             Funcionario novoFuncionario = new Funcionario(1, nome, dataNascimento, endereco, cargo, senha);

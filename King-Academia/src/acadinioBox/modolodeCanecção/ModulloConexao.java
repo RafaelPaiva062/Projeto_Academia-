@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ModulloConexao {
-    private static final String url = "jdbc:mysql://localhost:3306/dblojaetec?useSSL=false&serverTimezone=UTC";
+    private static final String url = "jdbc:mysql://localhost:3306/kinggymbrox?useSSL=false&serverTimezone=UTC";
     private static final String user = "root";
     private static final String password = "Prof@dm1n";
 
