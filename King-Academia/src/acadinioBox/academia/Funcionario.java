@@ -1,4 +1,4 @@
-package academia;
+package acadinioBox.academia;
 
 import java.util.Scanner;
 import java.time.LocalDate;
