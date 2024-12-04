@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Academiaboss",
+            "request": "launch",
+            "mainClass": "acadinioBox.academia.Academiaboss",
+            "projectName": "Projeto_Academia-_ee82b405"
+        },
+        {
+            "type": "java",
             "name": "ModulloConexao",
             "request": "launch",
             "mainClass": "acadinioBox.modolodeCanecção.ModulloConexao",
