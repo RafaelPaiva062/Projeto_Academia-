@@ -9,6 +9,13 @@
             "name": "Academiaboss",
             "request": "launch",
             "mainClass": "acadinioBox.academia.Academiaboss",
+            "projectName": "Projeto_Academia-_bd9bff98"
+        },
+        {
+            "type": "java",
+            "name": "Academiaboss",
+            "request": "launch",
+            "mainClass": "acadinioBox.academia.Academiaboss",
             "projectName": "Projeto_Academia-_ee82b405"
         },
         {

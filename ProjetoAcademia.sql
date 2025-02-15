@@ -14,6 +14,16 @@ use kinggymbrox;
 create table cliente(
 idcliente  int primary key auto_increment
 );
+
+create TABLE pagamentos (
+    idpagamentos int PRIMARY KEY AUTO_INCREMENT,
+    tipoplano VARCHAR(50) not null,
+    valorPlano FLOAT not null,
+    
+
+
+);
+
 SHOW TABLES;
 
 CREATE TABLE usuarios (
