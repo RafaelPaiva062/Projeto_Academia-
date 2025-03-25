@@ -107,6 +107,9 @@ class Funcionario extends Usuario {
                 e.printStackTrace();
                 System.out.println("Erro ao tentar cadastrar funcionário.");
             }
+        }catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao tentar cadastrar funcionário.");
         }
         // Se o cadastro falhar ou for interrompido, retornamos null
         return null; 
